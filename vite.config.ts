@@ -4,10 +4,12 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     tailwindcss(),
     react(),
   ],
+
   build: {
     chunkSizeWarningLimit: 1200,
     rollupOptions: {
